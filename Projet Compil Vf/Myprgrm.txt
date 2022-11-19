@@ -1,0 +1,45 @@
+Program compil
+PDEC
+//Partie declaration
+a:Pint;
+b:Pfloat;
+c|d:Pint;
+e|f:Pfloat;
+@define Pfloat pi=3.14;
+@define Pint g=33;
+h:Pfloat;
+x|y:Pint;
+//Double declaration 
+a:Pfloat;
+PINST 
+Begin 
+y<--y+2;
+
+//Modification d'une Constante
+pi<--2;
+//Incompatibilité de type
+a<--2.5;
+a<--b;
+//Division sur zero 
+a<--a/0;
+b<--b/(6-6);
+c<--0;
+d<--d/c;
+DO a<--a+1; IF:(a>2)
+ELSE a<--a-1; ENDIF
+FOR b<--2 WHILE 20
+DO
+x<--x+3;
+y<--y*2;
+//non declaree
+t<--t/2;
+ DO 
+  FOR i<--3 WHILE 40
+   DO 
+    DO b<--b+1; IF:((b<1)|(a>2)) ENDIF
+   ENDFOR 
+  IF:((y==1)&(x==1)) ENDIF
+ENDFOR
+c<--e;
+o<--2.44;
+End
