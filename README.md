@@ -1,1 +1,1 @@
-# Mini-com-lateur
+# Mini-compi-lateur
